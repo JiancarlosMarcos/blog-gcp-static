@@ -1,0 +1,47 @@
+extends ../template/plantilla
+block descripcion
+  meta(name='description', content=seo.pg1.descripcion)
+block titulo 
+  title=seo.pg1.titulo
+block contenido
+  .container
+    .header.mt-4
+      h1=seo.pg1.h1
+    .row.mt-4
+      .col-lg-8
+        h2.fw-bold.fs-6.mb-2 CUANTO MÁS CERCA ESTÁN LOS ESLABONES, MÁS FUERTE ES LA CADENA
+        img.mb-3(src='https://firebasestorage.googleapis.com/v0/b/anunalog.appspot.com/o/blog%2Fblog_content_item_13%2Fportada.webp?alt=media&token=705bf709-1134-48f6-9f80-c08251393cdf', alt='Almacenes', width='500px', style='width: 100%; object-fit: cover; height: 400px;')
+        .txt-justify.mb-3
+          h3.fw-bold.fs-6.d-inline
+            a.text-dark(href='anunalog-acercando-los-eslabones.html')
+              | "Necesito urgente un transporte para mañana y mis transportistas usuales no tienen unidades disponibles".
+          |  "En unos días llega la mercadería y no tenemos un almacén dónde dejarla" ¿Les suena familiar?
+        .txt-justify.mb-3
+          h3.fw-bold.fs-6.d-inline
+            a.text-dark(href='anunalog-acercando-los-eslabones.html') anunalog
+          |  nace para acercar los eslabones de la cadena de abastecimiento con la finalidad de ser el puente que conecte a los clientes con los transportistas y almacenes, contando con servicios que cumplan sus requerimientos: agilidad, seguridad, econom&iacute;a, eficiencia, oportunidad.
+        .txt-justify.mb-3
+          | A través de 
+          h3.fw-bold.fs-6.d-inline
+            a.text-dark(href='anunalog-acercando-los-eslabones.html') anunalog
+          |  las empresas que requieran servicios de transporte de carga o de almacenamiento podr&aacute;n encontrar las mejores opciones entre una gama de proveedores calificados.
+        .txt-justify.mb-3
+          | Los proveedores han sido previamente evaluados por 
+          h3.fw-bold.fs-6.d-inline
+            a.text-dark(href='https://anunalog.com/') anunalog
+          |  tengan la tranquilidad de trabajar con proveedores calificados. Además        
+          h3.fw-bold.fs-6.d-inline
+            a.text-dark(href='https://anunalog.com/') anunalog 
+          | hace un seguimiento a las operaciones para asegurar el cumplimiento del servicio y la satisfacci&oacute;n de sus clientes.
+        .txt-justify.mb-3
+          | Al mismo tiempo, 
+          h3.fw-bold.fs-6.d-inline
+            a.text-dark(href='https://anunalog.com/') anunalog
+          |  es la plataforma que permitir&aacute; a los proveedores de estos servicios ampliar su mercado, optimizando el uso de su capacidad.
+        .txt-justify.mb-3
+          h3.fw-bold.fs-6.d-inline
+            a.text-dark(href='https://anunalog.com/') anunalog
+          |  promueve la construcci&oacute;n de un pa&iacute;s con esp&iacute;ritu colaborativo entre las empresas del sector log&iacute;stico y sus clientes, utilizando herramientas digitales.        p
+      include ../template/siderbar
+  +embudo('#f9e59b','https://www.youtube.com/embed/mMMyVfMPU0U','SI estás buscando transporte de carga o almacen rápido, simple y seguro, únete gratis a anunalog', 'Únete como cliente')
+  +embudo('#d6e7ee', 'https://www.youtube.com/embed/TIKlne7sNGY','¿Eres transportista o tienes un almacén?  Únete a anunalog y consigue clientes rápido, simple y seguro','Únete como proveedor')
