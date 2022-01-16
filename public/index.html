@@ -9,21 +9,27 @@
     <meta name="google-site-verification" content="TfcIt7DixbzQswopzXvcvEM57yQgmXHByt3UXhMA3tk">
     <link rel="apple-touch-icon" href="https://anunalog.com/logo192.png">
     <link rel="icon" href="https://anunalog.com/favicon.ico">
-    <!-- Bootstrap CSS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,600&amp;display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="estilos.css">
     <style>
       body{
       font-family: 'Poppins', sans-serif;
       }
+      #blog[aria-expanded="true"]::after{
+        content:'ver menos blogs';
+      }
+      #blog[aria-expanded="false"]::after{
+        content:'ver más blogs';
+      }
     </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-width border-bottom px-5">
+    <nav class="navbar navbar-expand-lg navbar-light bg-width border-bottom px-2 px-md-5">
       <div class="container-fluid"><a class="navbar-brand" href="index.html" style="font-size: 1.5rem; font-weight: 700;">
           <svg width="40" height="40" viewBox="0 0 185 185" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 3px;">
             <path d="M119.304 64.0914V64.0908C119.293 49.0396 107.046 36.8033 92.0052 36.8033C76.9537 36.8033 64.7173 49.0399 64.7173 64.0914V87.161C64.7173 89.5053 66.5062 91.3794 68.8296 91.3794C71.197 91.3794 73.048 89.5147 73.048 87.161V64.0914C73.048 53.644 81.5478 45.134 92.0052 45.134C102.453 45.134 110.963 53.6339 110.963 64.0914V87.161C110.963 89.4736 112.783 91.3794 115.075 91.3794C117.439 91.3794 119.304 89.5177 119.304 87.161V64.0914Z" fill="#1A488E" stroke="#1A488E" stroke-width="1.5"></path>
@@ -36,7 +42,7 @@
             <path d="M20.5372 79.7075C13.2074 79.7075 7.25 85.6649 7.25 92.9947C7.25 100.324 13.2074 106.282 20.5372 106.282C27.867 106.282 33.8243 100.324 33.8243 92.9947C33.8243 85.6649 27.867 79.7075 20.5372 79.7075ZM26.4906 92.9947C26.4906 96.2724 23.8239 98.9481 20.5372 98.9481C17.2595 98.9481 14.5837 96.2815 14.5837 92.9947C14.5837 89.717 17.2504 87.0412 20.5372 87.0412C23.8141 87.0412 26.4906 89.7178 26.4906 92.9947Z" fill="#006CAA" stroke="#006CAA" stroke-width="1.5"></path>
           </svg>anunalog</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse d-flex justify-content-lg-end" id="navbarNavAltMarkup">
+        <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="navbarNavAltMarkup">
           <ul class="navbar-nav">
             <li class="nav-item"><a class="nav-link" aria-current="page" href="https://anunalog.com/">Inicio</a></li>
             <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Comunidad</a>
@@ -132,7 +138,7 @@
                 <h2 class="fs-4 uppercase">¿Porqué ofrecer mi almacén por anunalog?</h2>
                 <div style="height: 200px; width: auto;"><img style="object-fit:cover; object-position:center center; height: 100%; width: 100%;" src="https://cloudfront-us-east-1.images.arcpublishing.com/elcomercio/ZYOR4GW3BBCLXD6T5CLHQKRESI.jpg" alt="¿Porqué ofrecer mi almacén por anunalog?"/></div>
               </div></a>
-          </div><a class="btn btn-primary form-control mb-4" id="blog" data-bs-toggle="collapse" href="#collapseBlog" role="button" aria-expanded="false" aria-controls="collapseBlog">Ver m&aacute;s blogs</a>
+          </div><a class="btn btn-primary form-control mb-4" id="blog" data-bs-toggle="collapse" href="#collapseBlog" role="button" aria-expanded="false" aria-controls="collapseBlog">         </a>
         </div>
         <div class="col-lg-4 lg-px-5">
           <h3>&Uacute;LTIMOS CONTENIDOS</h3><a class="text-decoration-none text-dark" href="anunalog-acercando-los-eslabones.html">
@@ -155,24 +161,24 @@
             <path d="M20.5372 79.7075C13.2074 79.7075 7.25 85.6649 7.25 92.9947C7.25 100.324 13.2074 106.282 20.5372 106.282C27.867 106.282 33.8243 100.324 33.8243 92.9947C33.8243 85.6649 27.867 79.7075 20.5372 79.7075ZM26.4906 92.9947C26.4906 96.2724 23.8239 98.9481 20.5372 98.9481C17.2595 98.9481 14.5837 96.2815 14.5837 92.9947C14.5837 89.717 17.2504 87.0412 20.5372 87.0412C23.8141 87.0412 26.4906 89.7178 26.4906 92.9947Z" fill="#006CAA" stroke="#006CAA" stroke-width="1.5"></path>
           </svg>anunalog
         </div>
-        <div class="d-flex flex-row justify-content-between mb-5">
-          <div>
+        <div class="xs-row d-md-flex flex-row justify-content-between mb-xs-2 mb-md-5">
+          <div class="col-xs-12">
             <div style="font-weight: 600;">Comunidad</div>
             <div><a class="text-decoration-none text-secondary" href="porque-ofrecer-mi-almacen-por-anunalog.html">Almac&eacute;n</a></div>
           </div>
-          <div>
+          <div class="col-xs-12">
             <div style="font-weight: 600;">Legal</div>
             <div><a class="text-decoration-none text-secondary" href="https://anunalog.com/condiciones">Condiciones</a></div>
           </div>
-          <div>
+          <div class="col-xs-12">
             <div style="font-weight: 600;">Blog</div>
           </div>
-          <div>
+          <div class="col-xs-12">
             <div style="font-weight: 600;">Cont&aacute;ctanos</div>
             <div><a class="text-decoration-none text-secondary" href="https://bit.ly/FormWebAnunalog" target="__blank">Reg&iacute;strate</a></div>
             <div><a class="text-decoration-none text-secondary" href="https://wa.link/h047kl/" target="__blank">Central de atenci&oacute;n</a></div>
           </div>
-          <div>
+          <div class="col-xs-12">
             <div style="font-weight: 600;">App web</div>
             <div><a class="text-decoration-none text-secondary" href="https://anunalog.com/login?service=anunalog">Anunalog</a></div>
             <div><a class="text-decoration-none text-secondary" href="https://anunalog.com/login?service=anunaloger">Anunaloger</a></div>
@@ -180,8 +186,8 @@
         </div>
         <hr class="bg-white">
         <div class="d-flex flex-row align-items-center justify-content-between py-3">
-          <div class="d-flex align-items-center" style="color: #D9DBE1; font-size: 14px;">&copy; 2021 Anunalog. | Desarrollo de la web y app by&nbsp;<a href="https://conauti.com.pe/" target="__blank">CONAUTI</a><img class="m-2" src="https://anunalog.com/static/media/conauti.72c4108b.png" alt="conauti" width="160"></div>
-          <div class="d-flex">
+          <div class="xs-row d-md-flex align-items-center" style="color: #D9DBE1; font-size: 14px;">&copy; 2021 Anunalog. | Desarrollo de la web y app by&nbsp;<a href="https://conauti.com.pe/" target="__blank">CONAUTI</a><img class="m-2" src="https://anunalog.com/static/media/conauti.72c4108b.png" alt="conauti" width="160"></div>
+          <div class="xs-row d-md-flex">
             <div><a href="https://www.linkedin.com/company/anunalog" target="__blank">
                 <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" color="white" height="17" width="17" xmlns="http://www.w3.org/2000/svg" style="color: white;">
                   <path d="M417.2 64H96.8C79.3 64 64 76.6 64 93.9V415c0 17.4 15.3 32.9 32.8 32.9h320.3c17.6 0 30.8-15.6 30.8-32.9V93.9C448 76.6 434.7 64 417.2 64zM183 384h-55V213h55v171zm-25.6-197h-.4c-17.6 0-29-13.1-29-29.5 0-16.7 11.7-29.5 29.7-29.5s29 12.7 29.4 29.5c0 16.4-11.4 29.5-29.7 29.5zM384 384h-55v-93.5c0-22.4-8-37.7-27.9-37.7-15.2 0-24.2 10.3-28.2 20.3-1.5 3.6-1.9 8.5-1.9 13.5V384h-55V213h55v23.8c8-11.4 20.5-27.8 49.6-27.8 36.1 0 63.4 23.8 63.4 75.1V384z"></path>
