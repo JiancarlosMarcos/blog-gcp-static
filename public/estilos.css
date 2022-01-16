@@ -28,3 +28,24 @@
 .txt-justify{
   text-align: justify;
 }
+.fs-xs{
+  font-size: .8rem;
+}
+.fs-sm{
+  font-size: 1.32rem;
+}
+@media (max-width: 576px){
+  .fs-sm{
+    font-size: 1.11rem;
+  }
+  .w-400{
+    max-width: 100%;
+    height: auto;
+  }
+}
+@media (min-width: 576px){
+  .w-400{
+    width: 400px;
+    height: auto;
+  }
+}

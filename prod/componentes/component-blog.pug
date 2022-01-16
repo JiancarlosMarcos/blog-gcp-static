@@ -1,8 +1,8 @@
 mixin cardBlog(href,fecha,titulo,url_img, alt_img)
-  a.text-decoration-none.text-dark(href=href)
+  a.text-decoration-none.text-dark.text-xs-center(href=href)
     .border-bottom.pb-3.mb-3
-      span.fs-6.text-black-50=fecha
-      h2.fs-4.uppercase=titulo
+      span.fs-xs.text-black-50=fecha
+      h2.fs-sm.uppercase.text-opacity-75=titulo
       div(style='height: 200px; width: auto;')
         img(style='object-fit:cover; object-position:center center; height: 100%; width: 100%;', src=url_img, alt=alt_img)
 
