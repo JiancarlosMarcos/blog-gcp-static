@@ -9,6 +9,11 @@ block contenido
       h1 Últimas noticias sobre el blog
     .row.mt-4
       .col-lg-8
+        +cardBlog('transporte-de-carga-busqueda-de-choferes-para-camiones.html',
+                    'Marzo 03, 2022',
+                    seo.pg17.titulo,
+                    'img/Transportista.jpg',
+                    'transporte de carga busqueda de choferes para camiones')
         +cardBlog('que-tipo-de-vehiculo-necesito-para-mantener-la-cadena-de-frio.html',
                     'Noviembre 8, 2021',
                     seo.pg15.titulo,
@@ -89,11 +94,6 @@ block contenido
                     'Noviembre 20, 2020',
                     seo.pg14.titulo,
                     'https://cloudfront-us-east-1.images.arcpublishing.com/elcomercio/ZYOR4GW3BBCLXD6T5CLHQKRESI.jpg',
-                    '¿Porqué ofrecer mi almacén por anunalog?')    
-          +cardBlog('transporte-de-carga-busqueda-de-choferes-para-camiones.html',
-                    'Marzo 03, 2022',
-                    seo.pg14.titulo,
-                    'img/Transportista.jpg',
-                    'transporte de carga busqueda de choferes para camiones')
+                    '¿Porqué ofrecer mi almacén por anunalog?')              
         a#blog.btn.btn-primary.form-control.mb-4(data-bs-toggle='collapse', href='#collapseBlog', role='button', aria-expanded='false', aria-controls='collapseBlog')          
       include ../template/siderbar
